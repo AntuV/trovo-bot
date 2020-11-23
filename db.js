@@ -11,10 +11,9 @@ const upgradeSchema = async (version) => {
       'trovo.user': '',
       'trovo.email': '',
       'trovo.password': '',
-      'trovo.email': '',
-      'trovo.password': '',
       pointsname: 'Gold Coins',
-      debug: false
+      debug: false,
+      owner: 'AntuV'
     };
 
     const keys = Object.keys(initialConfig);

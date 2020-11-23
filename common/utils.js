@@ -7,7 +7,7 @@ const utils = {
 
     return (
       utils.mods.some(m => m.username === messageInfo.user.username) ||
-      messageInfo.user.username === config.get('channel').toLowerCase() ||
+      messageInfo.user.username === config.get('trovo.user').toLowerCase() ||
       messageInfo.user.username === config.get('owner').toLowerCase()
     );
   },
