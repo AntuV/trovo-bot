@@ -1,9 +1,10 @@
 const dayjs = require("dayjs");
-const config = require("../config.js");
 
 const utils = {
   mods: [],
   checkPermission: (messageInfo) => {
+    const config = require("../config.js");
+
     return (
       utils.mods.some(m => m.username === messageInfo.user.username) ||
       messageInfo.user.username === config.get('channel').toLowerCase() ||
